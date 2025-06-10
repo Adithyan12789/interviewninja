@@ -103,7 +103,7 @@
 
   /* Make all text white in dark mode */
   .dark * {
-    color: #ffffff;
+    color: #000000;
   }
 
   /* Override specific text elements */
@@ -216,7 +216,7 @@
   }
 
   .form .input {
-    @apply bg-[#27282f] rounded-full min-h-12 px-5;
+    @apply bg-[#27282f] rounded-full min-h-12 px-5 text-white;
   }
 
   .form .input::placeholder {
