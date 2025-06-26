@@ -101,11 +101,6 @@
     color: #ffffff;
   }
 
-  /* Make all text white in dark mode */
-  .dark * {
-    color: #000000;
-  }
-
   /* Override specific text elements */
   h1,
   h2,
