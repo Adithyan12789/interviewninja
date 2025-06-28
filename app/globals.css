@@ -101,6 +101,10 @@
     color: #ffffff;
   }
 
+  .dark * {
+    color: #000000;
+  }
+
   /* Override specific text elements */
   h1,
   h2,
