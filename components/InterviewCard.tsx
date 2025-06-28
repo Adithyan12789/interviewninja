@@ -61,7 +61,7 @@ const InterviewCard = async ({
             <div className="flex flex-row justify-between">
               <DisplayTechIcons techStack={techstack} />
 
-              <Button className="btn-primary bg-gray-400">
+              <Button className="text-sm font-semibold w-fit hover:bg-gray-600 hover:text-white rounded-full px-5 py-3 cursor-pointer min-h-10 bg-white">
                 <Link className="font-bold" href={feedback ? `/interview/${id}/feedback` : `/interview/${id}`}>
                   {feedback ? 'Check Feedback' : "View Interview"}
                 </Link>

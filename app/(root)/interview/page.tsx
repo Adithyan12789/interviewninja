@@ -10,7 +10,7 @@ const page = async () => {
     <>
       <h2 className='text-white'>Interview Genaration</h2>
 
-      <Agent userName={user?.name} userId={user?.id} type="generate"/>
+      <Agent userName={user?.name ?? ''} userId={user?.id} type="generate"/>
     </>
   )
 }

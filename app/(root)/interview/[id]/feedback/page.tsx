@@ -95,7 +95,7 @@ const Feedback = async ({ params }: RouteParams) => {
       <div className="buttons">
         <Button className="btn-secondary flex-1">
           <Link href="/" className="flex w-full justify-center">
-            <p className="text-sm font-semibold text-primary-200 text-center">
+            <p className="text-sm font-semibold bg-white w-fit hover:bg-black hover:text-white rounded-full px-5 py-3 cursor-pointer min-h-10">
               Back to dashboard
             </p>
           </Link>
@@ -106,7 +106,7 @@ const Feedback = async ({ params }: RouteParams) => {
             href={`/interview/${id}`}
             className="flex w-full justify-center"
           >
-            <p className="text-sm font-semibold text-center">
+            <p className="text-sm font-semibold bg-white w-fit hover:bg-black hover:text-white rounded-full px-5 py-3 cursor-pointer min-h-10">
               Retake Interview
             </p>
           </Link>

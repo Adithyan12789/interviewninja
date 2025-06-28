@@ -38,7 +38,7 @@ const page = async () => {
 
           <Button
             asChild
-            className="btn-primary bg-slate-300 text-black font-bold max-sm:w-full"
+            className="text-sm font-semibold bg-white w-fit hover:bg-black hover:text-white rounded-full px-5 py-3 cursor-pointer min-h-10"
           >
             <Link href="/interview">Start An Interview</Link>
           </Button>
