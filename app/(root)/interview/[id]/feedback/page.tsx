@@ -25,9 +25,9 @@ const Feedback = async ({ params }: RouteParams) => {
   return (
     <section className="section-feedback">
       <div className="flex flex-row justify-center">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-4xl font-semibold text-white">
           Feedback on the Interview -{" "}
-          <span className="capitalize">{interview.role}</span> Interview
+          <span className="capitalize text-white">{interview.role}</span> Interview
         </h1>
       </div>
 
@@ -36,9 +36,9 @@ const Feedback = async ({ params }: RouteParams) => {
           {/* Overall Impression */}
           <div className="flex flex-row gap-2 items-center">
             <Image src="/star.svg" width={22} height={22} alt="star" />
-            <p>
+            <p className="text-white">
               Overall Impression:{" "}
-              <span className="text-primary-200 font-bold">
+              <span className="text-primary-200 font-bold text-white">
                 {feedback?.totalScore}
               </span>
               /100
@@ -48,7 +48,7 @@ const Feedback = async ({ params }: RouteParams) => {
           {/* Date */}
           <div className="flex flex-row gap-2">
             <Image src="/calendar.svg" width={22} height={22} alt="calendar" />
-            <p>
+            <p className="text-white">
               {feedback?.createdAt
                 ? dayjs(feedback.createdAt).format("MMM D, YYYY h:mm A")
                 : "N/A"}
@@ -59,35 +59,35 @@ const Feedback = async ({ params }: RouteParams) => {
 
       <hr />
 
-      <p>{feedback?.finalAssessment}</p>
+      <p className="text-white">{feedback?.finalAssessment}</p>
 
       {/* Interview Breakdown */}
       <div className="flex flex-col gap-4">
-        <h2>Breakdown of the Interview:</h2>
+        <h2 className="text-white">Breakdown of the Interview:</h2>
         {feedback?.categoryScores?.map((category, index) => (
           <div key={index}>
-            <p className="font-bold">
+            <p className="font-bold text-white">
               {index + 1}. {category.name} ({category.score}/100)
             </p>
-            <p>{category.comment}</p>
+            <p className="text-white">{category.comment}</p>
           </div>
         ))}
       </div>
 
       <div className="flex flex-col gap-3">
-        <h3>Strengths</h3>
-        <ul>
+        <h3 className="text-white">Strengths</h3>
+        <ul className="text-white">
           {feedback?.strengths?.map((strength, index) => (
-            <li key={index}>{strength}</li>
+            <li className="text-white" key={index}>{strength}</li>
           ))}
         </ul>
       </div>
 
       <div className="flex flex-col gap-3">
-        <h3>Areas for Improvement</h3>
-        <ul>
+        <h3 className='text-white'>Areas for Improvement</h3>
+        <ul className="text-white">
           {feedback?.areasForImprovement?.map((area, index) => (
-            <li key={index}>{area}</li>
+            <li className="text-white" key={index}>{area}</li>
           ))}
         </ul>
       </div>
@@ -106,7 +106,7 @@ const Feedback = async ({ params }: RouteParams) => {
             href={`/interview/${id}`}
             className="flex w-full justify-center"
           >
-            <p className="text-sm font-semibold text-black text-center">
+            <p className="text-sm font-semibold text-center">
               Retake Interview
             </p>
           </Link>

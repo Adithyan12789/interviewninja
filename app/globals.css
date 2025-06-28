@@ -187,11 +187,11 @@
   }
 
   .btn-primary {
-    @apply w-fit bg-[#cac5fe] text-[#020408] hover:bg-[#cac5fe]/80 rounded-full font-bold px-5 cursor-pointer min-h-10;
+    @apply w-fit bg-[#cac5fe] text-[#020408] hover:bg-white rounded-full font-bold px-5 cursor-pointer min-h-10;
   }
 
   .btn-secondary {
-    @apply w-fit bg-[#27282f] text-[#cac5fe] hover:bg-[#27282f]/80 rounded-full font-bold px-5 cursor-pointer min-h-10;
+    @apply w-fit bg-[#ffffff] text-[#cac5fe] hover:bg-[#27282f]/80 hover:text-white rounded-full font-bold px-5 cursor-pointer min-h-10;
   }
 
   .btn-upload {
